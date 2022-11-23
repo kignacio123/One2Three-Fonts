@@ -1,0 +1,15 @@
+.spinner-border {
+  &-small {
+    width: 1rem !important;
+    height: 1rem !important;
+  }
+
+  &-large {
+    width: 3rem !important;
+    height: 3rem !important;
+  }
+}
+
+.spinner-label {
+  margin-right: .5rem;
+}

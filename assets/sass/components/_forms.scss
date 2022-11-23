@@ -1,0 +1,117 @@
+// FORM-GROUP
+.form-group {
+  margin-bottom: 2rem;
+
+  .error-message {
+    color: $color-light-red;
+    font-size: .75rem;
+    padding-top: .313rem;
+    width: 100%;
+    display: block;
+    border-radius: 3px;
+
+    i.fas {
+      margin-right: .3rem;
+    }
+  }
+
+  label {
+    // text-transform: capitalize;
+    color: $color-white;
+    font-size: .875rem !important;
+  }
+}
+
+// FORMS
+.form-control {
+  position: relative;
+  border-color: $color-gray-2-opacity-50 !important;
+  font-size: .875rem !important;
+  height: 2.375rem !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  border-radius: 0 !important;
+
+  // ERROR-STATE INPUT
+  &.invalid {
+    border-color: $color-red !important;
+    background: rgba($color-red,0.1) !important;
+  }
+
+  &::placeholder {
+    color: $color-black-1 !important;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba($color-gray-2, .35) !important;
+  }
+
+  &--dark {
+    background-color: rgba($color-white, .1) !important;
+    color: rgba($color-white, .5) !important;
+    border: 0 !important;
+
+    &::placeholder {
+      color: rgba($color-white, .5) !important;
+    }
+
+    &::-webkit-time-picker-indicator,
+    &::-webkit-calendar-picker-indicator {
+      filter: invert(1) !important;
+    }
+  }
+
+  &--darker {
+    border: 0 !important;
+    background-color: $color-black-1 !important;
+    color: rgba($color-white, .5) !important;
+
+    &::placeholder {
+      color: rgba($color-white, .5) !important;
+    }
+  }  
+
+  &--rounded {
+    border-radius: 5px !important;
+  }
+
+  &--rounded-50 {
+    border-radius: 50px !important;
+  }
+}
+
+select {
+  padding: 0 .2rem !important;
+}
+
+// SEARCH FIELD
+.search-group {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+
+  input {
+    width: auto;
+  }
+}
+
+// SECTION
+section {
+  margin-top: 2rem;
+}
+
+// PARAGRAPH
+p {
+  color: $color-gray-9;
+  letter-spacing: .4px;
+  line-height: 1.7;
+}
+
+
+// FORM ACTIONS
+.form-actions {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  padding: auto 0.938rem;
+}

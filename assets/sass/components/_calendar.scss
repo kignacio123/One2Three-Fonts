@@ -1,0 +1,127 @@
+// Default Datepicker - White
+ngb-datepicker {
+  button {
+    min-width: auto !important;
+    padding: 01 !important;
+  }
+
+  .custom-day {
+    display: inline-block;
+    height: 2rem;
+    padding: 0.185rem 0.25rem;
+    text-align: center;
+    width: 2rem;
+  
+    &.focused {
+      background-color: $color-gray-1;
+    }
+  
+    &.range,
+    &:hover {
+      background-color: $color-black-1;
+      color: $color-white;
+    }
+  
+    &.faded {
+      background-color: rgba($color-black-1, 0.5);
+    }
+  }
+}
+
+.form-group.hidden {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 0;
+}
+
+button.calendar {
+  min-width: auto;
+  border: 1px solid $color-gray-2 {
+    radius: 0;
+    left: 0;
+  };
+}
+
+// Custom Datepicker 
+.datepicker {
+  input {
+    border: 0 {
+      top-left-radius: 5px !important;
+      bottom-left-radius: 5px !important;
+    }
+  }
+
+  button.calendar {
+    border: 0 {
+      top-right-radius: 5px;
+      bottom-right-radius: 5px;
+      left: 0;
+    }
+  }
+
+  button.calendar,
+  button.calendar:active {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 23px;
+    width: 2.75rem;
+    background-color: inherit !important;
+  }
+
+  button.calendar,
+  .ngb-dp-arrow-btn {
+    min-width: auto !important;
+  }
+
+  &--dark {
+    input,
+    button.calendar {
+      background-color: rgba($color-white, .1) !important;
+      color: $color-white !important;
+
+      &::placeholder {
+        color: $color-white !important;
+      }
+    }  
+  }
+
+  &--darker {
+    input,
+    button.calendar {
+      background-color: $color-black-1 !important;
+      color: $color-white !important;
+
+      &::placeholder {
+        color: $color-white !important;
+      }
+    }  
+  }
+}
+
+
+ngb-datepicker-month {
+  background-color: $color-white;
+}
+
+ngb-datepicker {
+  .ngb-dp-navigation-chevron {
+    color: $color-primary;
+  }
+  
+  .ngb-dp-weekday {
+    color: $color-black-1;
+  }
+
+  .ngb-dp-week {
+    .bg-primary {
+      background-color: $color-black-1 !important;
+    }
+  }
+
+  .ngb-dp-arrow {
+    button {
+      color: $color-primary !important;
+    }
+  }
+}

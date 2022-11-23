@@ -1,0 +1,52 @@
+$color-primary: #AD151C; //#00beff;
+$color-secondary: #212121; //#6C757D;
+
+/* BLACK AND WHITE */
+$color-white: #FFFFFF; //PARAGRAPH
+$color-black-0: #000000; //BOX SHADOW
+$color-black-1: #333333; //BACKGROUND, TOP NAV BG, CARD BG
+$color-black-2: #0C343D; //SIGN UP BUTTON
+
+/* GRAY */
+$color-gray-1:#e6e6e6; //SLIDE EDITOR GRID CANVAS
+$color-gray-2: #838383; //BORDER COLOR, LABEL, TABLE HEADER
+$color-gray-2-opacity-10: rgba(131, 131, 131, .1);
+$color-gray-2-opacity-20: rgba(131, 131, 131, .2);
+$color-gray-2-opacity-50: rgba(131, 131, 131, .5);
+$color-gray-3: #8F8FA0; //SOCIAL MEDIA LOGIN TEXT
+$color-gray-4: #5a5a5a; //TOAST NEUTRAL
+$color-gray-5: #EAF0F6; //ARCHIVE BUTTON ACTIVE
+$color-gray-6: #c1c1c1; // SLIDE EDITOR CANVAS
+
+/* BOOKING STATUS */
+$color-seated: #E66E06; 
+$color-arrived: #E6D506; 
+$color-free: #00B092; 
+$color-noshow: #AD151C;;
+
+$color-red: #DC3545; //ERROR, DASHBOARD
+$color-light-red: #ff5f6e;
+
+/* OTHERS */
+$color-red-1: #F00000;
+$color-red-2: #840000;
+$color-red-gradient: linear-gradient(to bottom, $color-red-1, $color-red-2);
+
+$color-green-1: #00B092;
+$color-orange-1: #E66E06;
+$color-yellow-1: #E6D506; 
+$color-blue-1: #1798B0;
+
+$color-gray-5: #EAF0F6; //ARCHIVE BUTTON ACTIVE
+//$color-gray-6: #99ACC2; //LABELS
+$color-gray-7: #516F90; //BANNER LABEL
+$color-gray-8: #7388A9; //STATUS BAR CONTAINER
+$color-gray-9: #61788E; 
+
+$color-orange: rgb(212, 222, 231); // DASHBOARD BAR, TAB UNDERLINE
+$color-green-3: #F8F9FA; //MAIN PAGE BG
+$color-green-4: #E1FFFB; //SIDENAV USERPANEL HOVER
+$color-green-5: #7FD1DE; //HEADING BANNER BG
+$color-blue: #00A4BD;
+$color-blue-2: #42ACDB; //FORGOT PASSWORD
+$color-blue-3: #196CC5;

@@ -1,0 +1,57 @@
+/* Checkbox */
+
+.checkbox-container {
+	label {
+	  display: grid;
+	  grid-template-columns: auto 1fr;
+	  grid-gap: 5px;
+	  align-items: center;
+    cursor: pointer;
+	}
+      
+  input.checkbox {
+    display: none;
+
+    &:checked+.check-icon {
+      border-color: $color-green-1;
+      background: $color-green-1;
+    }
+
+    &:checked+.check-icon:before {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .check-icon {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    top: 0;
+    border: solid 1px $color-gray-2-opacity-50;
+    background-color: $color-white;
+    border-radius: 3px;
+    transition: .2s all ease-in-out;
+
+    &:before {
+      content: "\f00c";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 12px;
+      color: $color-white;
+      text-align: center;
+      top: 3;
+      transform: scale(1.5);
+      transition: .2s all ease-in-out;
+      opacity: 0;
+    }
+  }
+
+  h4 {
+    margin: 0;
+  }
+}

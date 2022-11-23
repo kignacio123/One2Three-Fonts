@@ -1,0 +1,58 @@
+@import "../base/variables";
+
+.sign-up-page {
+  background-color: $color-primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  min-height: 569px;
+
+  &__form-container {
+    border-radius: 14px;
+    background-color: white;
+    padding: 0 3rem;
+    width: 80%;
+    max-width: 1000px;
+    height: 80%;
+    min-height: 400px;
+    max-height: 1000px;
+
+    form {
+      margin-top: -3rem;
+      .error-note {
+        font-size: small;
+        color: $color-red;
+        margin-bottom: 7px;
+      }
+    }
+
+    &__logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 30%;
+      margin-top: 2.25rem;
+      margin: 0;
+      padding: 0;
+
+      img {
+        justify-self: center;
+        align-self: center;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sign-up-page {
+    &__form-container {
+      width: 100vw;
+      height: 100vh;
+      padding: 0 2rem;
+    }
+  }
+}

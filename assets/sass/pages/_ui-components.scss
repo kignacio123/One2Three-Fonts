@@ -1,0 +1,114 @@
+// DELETE ALL THESE WHEN USED IN AN ACTUAL PROJECT.
+.ui-components-page {
+
+  // SEARCH
+  .search-function {
+    background: $color-secondary;
+    padding-bottom: 2rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    margin-top: -1px;
+
+    .form-row {
+      padding-top: 2rem;
+    }
+  }
+
+  // JUMBOTRON OVERRIDEW
+  .ui-components-introduction {
+    .jumbotron {
+      margin-bottom: 0;
+    }
+  }
+
+  // ACCORDION
+  section.accordion-section {
+    margin-top: 0;
+  }
+
+  // SECTION
+  section.component {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid $color-black-1;
+  }
+
+  .component-description {
+    margin-top: 1rem;
+    // min-height: 6rem;
+  }
+
+  .common-description {
+    margin-bottom: 2rem;
+
+    h4.example, h4.code {
+      margin-top: 2rem;
+    }
+  }
+
+  h1 {
+    color: $color-black-2 !important;
+  }
+
+  .highlight {
+    background-color: rgba($color-gray-8, 0.1);
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba($color-black-1,.03);
+
+    pre {
+      padding: 1rem;
+      color: $color-gray-9;
+      // font-weight: 600;
+      line-height: 2;
+    }
+  }
+
+  .card-section {
+    .card {
+      .btn {
+        float: right;
+      }
+      .card-img {
+        img {
+          height: 10%;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .carousel-section {
+    .carousel-caption{
+      z-index: 1;
+      p{
+        color: white;
+      }
+    }
+    .picsum-img-wrapper {
+      img {
+        width: 100%;
+      }
+    }
+    .picsum-img-wrapper1 {
+      height: 31.25rem;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .row {
+    margin-top: 3rem;
+  }
+}
+//Breadcrumb
+.breadcrumb li{
+  margin-right: 1rem;
+}
+
+//POPOVER
+.my-custom-class .arrow::before {
+  border-top-color: darkgreen !important;
+}

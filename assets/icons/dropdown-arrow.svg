@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="6" height="3" viewBox="0 0 6 3">
+  <g id="dropdown-arrow" transform="translate(6 3) rotate(180)">
+    <path d="M 4.792900085449219 2.5 L 1.207100033760071 2.5 L 3 0.707099974155426 L 4.792900085449219 2.5 Z" stroke="none"/>
+    <path d="M 3 1.414219975471497 L 2.414220094680786 2 L 3.585779905319214 2 L 3 1.414219975471497 M 3 0 L 6 3 L 0 3 L 3 0 Z" stroke="none" fill="#000"/>
+  </g>
+</svg>

@@ -1,0 +1,59 @@
+.widget-properties {
+  h4 {
+    margin-bottom: 0;
+  }
+
+  label {
+    color: $color-black-0;
+    line-height: 1;
+    font-size: .75rem !important;
+  }
+
+  p {
+    font-size: .75rem !important;
+    color: $color-black-0 !important;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+
+  .form-group {
+    margin-bottom: .3rem !important;
+  }
+
+  .form-control {
+    height: 2rem !important;
+    font-size: .8rem !important;
+  }
+
+  .dropdown, .dropup {
+    width: 100% !important;
+
+    label {
+      line-height: unset !important;
+    }
+  }
+  .dropdown-toggle {
+    color: $color-gray-2 !important;
+    font-weight: 400 !important;
+    padding: 0.5rem !important;
+    // height: 2.25rem !important;
+    border-radius: 0px 5px 5px 0px !important;
+
+    &:after {
+      color: $color-black-0;
+    }
+
+    &.text-truncate {
+      padding: 0.5rem 1.25rem 0.5rem 0.5rem !important;
+    }
+  }
+
+  .dropdown-item {
+    padding: 0.3rem 1rem !important;
+  }
+
+  button {
+    padding-left: .5rem !important;
+    padding-right: .5rem !important;
+  }
+}

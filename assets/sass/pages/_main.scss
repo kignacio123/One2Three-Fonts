@@ -1,0 +1,36 @@
+// MAIN PAGE BASE
+.main-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden; //hidden to focus on main content scroll
+  
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+  }
+
+  .main-content {
+    height: 100%;
+    padding: 0.75rem;
+    overflow-y: auto; // over flow on the body only
+    
+    &__container {
+      background-color: $color-secondary;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: 2rem;      
+      height: calc(100vh - 9.75rem); 
+
+      @media (max-width: 600px) {
+        padding: 1rem !important;
+      }
+    }
+  }
+
+  &__content {
+    height: 100vh;
+    width: 100%;
+  }
+}

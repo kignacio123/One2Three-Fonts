@@ -1,0 +1,157 @@
+.table {
+  background-color: $color-black-1;
+
+  thead {
+    background-color: $color-secondary !important;
+
+    th {
+      color: $color-gray-2;
+      background-color: transparent !important;
+      font: {
+        size: 0.875rem;
+        weight: 600;
+      };
+      cursor: pointer;
+
+      &:last-child {
+        text-align: right;
+      }
+    }
+
+    tr {
+      background-color: transparent !important;
+    }
+  }
+
+  th,
+  td {
+    padding: 0.64rem !important;
+  }
+
+  th,
+  td,
+  tr {
+    background-color: $color-black-1;
+    border-bottom: 4px solid $color-secondary !important;
+    border-top: 0 !important;
+    vertical-align: middle !important;
+    color: $color-white;
+  }
+
+
+  // FOR INPUT
+  input {
+    width: -webkit-fill-available;
+  } 
+
+  // FOR ACTION BUTTONS
+  .table-actions {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: .25rem;
+  }
+
+  // COLUMN WIDTH
+  .column-25 {
+    width: 25%;
+  }
+
+  .column-30 {
+    width: 25%;
+  }
+
+  .column-50 {
+    width: 50%;
+  }
+
+  .column-75 {
+    width: 75%;
+  }
+
+  .column-100 {
+    width: 100%;
+  }
+
+  // WHITE
+  &-light {
+    thead {
+      background-color: $color-white !important;
+
+      th {
+        color: $color-gray-2;
+      }
+    }
+
+    th,
+    td,
+    tr {
+      border-bottom: 1px solid $color-gray-2-opacity-20 !important;
+      color: $color-black-0;
+      background-color: $color-white !important;  
+    }
+
+    i {
+      color: $color-gray-2 !important;
+    }
+  }
+
+  // DARKER THAN DEFAULT 
+  &-darker {
+    thead {
+      background-color: transparent !important;
+    }
+
+    th,
+    td,
+    tr {
+      border-bottom: 2px solid $color-gray-2-opacity-20 !important;
+      background-color: $color-secondary !important;  
+    }
+  }
+
+  // STRIPED
+  &-striped {
+    background-color: $color-black-1 !important;
+
+    thead th {
+      background-color: $color-secondary !important;
+    }
+
+    tbody tr:nth-of-type(odd) {
+      background-color: rgba(0, 0, 0, 0.1) !important;
+    }
+
+    th,
+    td,
+    tr {
+      background-color: transparent !important;
+    }
+  }
+
+  // BORDERED
+  &-bordered {
+    th,
+    td,
+    tr {
+      border: 2px solid $color-secondary !important;
+    }
+  }
+
+  // BORDERLESS
+  &-borderless {
+    th,
+    td,
+    tr {
+      border-bottom: 0 !important;
+    }
+  }
+
+  &-hover {
+    tbody {
+      tr:hover {
+        color: $color-primary !important;
+      }
+    }
+  }
+}

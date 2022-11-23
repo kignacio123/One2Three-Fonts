@@ -1,0 +1,108 @@
+// DASHBOARD BASE
+.dashboard-page {
+  height: 100%;
+
+  h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1rem;
+
+    @media only screen and (max-width: 1440px) {
+      grid-template-columns: repeat(4, 1fr) !important;
+    }
+
+    @media only screen and (max-width: 1180px) {
+      grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    @media only screen and (max-width: 420px) {
+      grid-template-columns: 1fr !important;
+    }
+
+    .card {
+      flex-direction: row !important;
+      cursor: pointer;
+      
+      &-title {
+        margin-bottom: 2rem;
+      }
+
+      &-text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $color-gray-2;
+        
+        & > div {
+          display: flex;
+          align-items: center;
+
+          span {
+            color: $color-gray-2 !important;
+            text-align: center;
+            font-size: .825rem;
+            margin-left: 0;
+          }
+        }
+
+        img {
+          width: 5rem;
+        }
+      }
+
+      &-body {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100%;
+      }
+    }
+  }
+
+  .charts-row-1,
+  .charts-row-2 {
+    justify-content: space-evenly;
+  }
+
+  .line-chart,
+  .bar-chart,
+  .pie-chart,
+  .doughnut-chart {
+    &__label {
+      margin-top: 1.5rem;
+
+      &__description {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+
+        & > * {
+          margin: 10px;
+        }
+      }
+    }
+  }
+
+  .line-chart,
+  .bar-chart {
+    &__chart {
+      margin: 0 2rem 1.2rem;
+    }
+  }
+
+  .pie-chart,
+  .doughnut-chart {
+    &__chart {
+      margin-bottom: 2rem;
+      margin-right: 2rem;
+    }
+  }
+}

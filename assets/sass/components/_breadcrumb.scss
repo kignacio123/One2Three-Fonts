@@ -1,0 +1,40 @@
+
+ul.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 0 !important;
+  
+  li.breadcrumb-item {
+    font-weight: 600;
+    margin-right: 0 !important;
+    padding-left: 0;
+
+    &.active {
+      a {
+        color: $color-white !important;
+      }
+    }
+  
+    a {
+      font-size: 1.2rem;
+      font-weight: 600 !important;
+      color: rgba($color-white, .5) !important;
+      text-decoration: none;
+    }
+    
+    + ::before {
+      content: url('/assets/images/arrow-right.svg') !important;
+      padding: 0 .8rem;
+      position: relative;
+      top: 1px;
+    }
+  }
+
+  &--small {
+    li.breadcrumb-item {
+      a {
+        font-size: 1rem;
+      }
+    }
+  }
+}

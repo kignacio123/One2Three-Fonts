@@ -1,0 +1,30 @@
+/* REGULAR */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans-Regular.ttf') format('ttf'),
+        url('OpenSans-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* BOLD */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans-Bold.ttf') format('ttf'),
+        url('OpenSans-Bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* SEMI BOLD */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans-SemiBold.ttf') format('ttf'),
+        url('OpenSans-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+

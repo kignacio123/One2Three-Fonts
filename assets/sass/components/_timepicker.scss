@@ -1,0 +1,11 @@
+.timepicker {
+    &--primary {
+      .ngb-tp-meridian {
+        button {
+          min-width: 2rem !important;
+          background-color: $color-primary;
+          color: $color-white !important;
+        }
+      }
+    }
+  }

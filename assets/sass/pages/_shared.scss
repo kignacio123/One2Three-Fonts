@@ -1,0 +1,120 @@
+// FOR SLIDES
+.slides {
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: .8rem;
+    grid-gap: .6rem;
+
+    h5 {
+      margin: 0;
+      color: $color-white;
+      font: {
+        weight: 700 !important;
+      }
+    }
+
+    label {
+      margin: 0;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 0.4em;
+
+    @media only screen and (max-width: 1600px) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    @media only screen and (max-width: 1600px) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    @media only screen and (max-width: 1280px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media only screen and (max-width: 420px) {
+      grid-template-columns: 1fr;
+    }
+
+    .card-img-top {
+      background: $color-gray-1;
+      padding: 2.5rem;
+      border-top-left-radius: 0.75rem;
+      border-top-right-radius: 0.75rem;
+      display: flex;
+      justify-content: center;
+      height: 170px;
+
+      i {
+        color: $color-gray-2;
+      }
+    }
+
+    .card-body {
+      padding: 0.5rem;
+    }
+
+    .card-text {
+      color: $color-gray-2;
+    }
+  }
+
+  .nav-expanded {
+    @media only screen and (max-width: 1563px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media only screen and (max-width: 1303px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media only screen and (max-width: 1045px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .nav-collapsed {
+    @media only screen and (max-width: 1440px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media only screen and (max-width: 1280px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+.sneak-preview {
+  padding: 1.5rem;
+  background-color: $color-gray-2-opacity-20;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+
+  label {
+    margin: 0;
+  }
+
+  .slides__header {
+    margin-bottom: 0;
+  }
+
+  .slides__list {
+    margin-top: .8rem;
+
+    &:empty {
+      margin-top: 0;
+    }
+  }
+}

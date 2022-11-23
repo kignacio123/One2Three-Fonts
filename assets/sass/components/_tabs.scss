@@ -1,0 +1,70 @@
+//TABS
+.nav-tabs {
+  border-bottom: 1px solid $color-black-1 !important;
+
+  .nav-link {
+    &.active {
+      background-color: $color-black-1 !important;
+      color: $color-white !important;
+      border: 1px solid $color-black-1 !important;
+    }
+
+    &:hover {
+      border: 0;
+    }
+  }
+}
+
+//PILLS 
+.nav-pills {
+  gap: .5rem;
+
+  .nav-item {
+    text-align: center;
+    min-width: 8rem;
+    text-align: left;
+
+    i.fa,
+    i.fas {
+      font-size: 1rem;
+      padding-right: 0.5rem;
+    }
+  }
+
+      
+  .nav-link {
+    color: $color-white !important;
+    background-color: $color-gray-2-opacity-10 !important;
+    padding: .7rem 1rem;
+
+    &.active {
+      background-color: $color-primary !important;
+      color: $color-white !important;
+    }
+  }
+
+  &--rounded {
+    .nav-item {
+      text-align: center;
+    }
+    
+    .nav-link {
+      border-radius: 50px !important;
+    }
+  }
+
+  &--vertical {
+    .nav-item {
+      margin-right: 0 !important;
+    }
+    
+    .nav-link {
+      padding: .8rem;
+    }
+  }
+}
+
+.tab-content,
+.tab-pane {
+  height: 100%;
+}
